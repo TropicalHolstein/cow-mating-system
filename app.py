@@ -48,7 +48,7 @@ if st.button("สืบค้นข้อมูล", type="primary"):
                 
             with col2:
                 st.metric(
-                    label=f"ค่าจุดตัด ({sire_input})", 
+                    label=f"ค่าอัตราเลือดชิด(%) ({sire_input})", 
                     value=f"{intersection_val:.6f}" if isinstance(intersection_val, (float, int)) else str(intersection_val)
                 )
         else:
