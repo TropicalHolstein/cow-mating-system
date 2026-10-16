@@ -3,9 +3,9 @@ import sqlite3
 import pandas as pd
 
 # ตั้งค่าหน้าตาของเว็บสำหรับสมาร์ทโฟน/แท็บเล็ต
-st.set_page_config(page_title="ระบบสืบค้นคู่ผสมพันธุ์โค", layout="centered")
+st.set_page_config(page_title="ระบบสืบค้นจับคู่ผสม Young Sire รุ่น29", layout="centered")
 
-st.title("🐄 ระบบสืบค้นคู่ผสมพันธุ์โค")
+st.title("🐄 ระบบสืบค้นจับคู่ผสมพันธุ์ Young Sire รุ่น29")
 
 # รายชื่อพ่อพันธุ์ทั้งหมดในตาราง
 SIRE_LIST = ['TH519', 'TH518', 'TH517', 'TH514', 'TH513', 'TH512', 'TH510', 'TH520', 'TH521', 'TH523']
@@ -48,7 +48,7 @@ if st.button("สืบค้นข้อมูล", type="primary"):
                 
             with col2:
                 st.metric(
-                    label=f"ค่าอัตราเลือดชิด(%) ({sire_input})", 
+                    label=f"ค่าอัตราเลือดชิด(%)ลูกที่เกิดจาการจับคู่ ({sire_input})", 
                     value=f"{intersection_val:.6f}" if isinstance(intersection_val, (float, int)) else str(intersection_val)
                 )
         else:
