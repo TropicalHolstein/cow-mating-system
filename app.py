@@ -5,7 +5,7 @@ import pandas as pd
 # ตั้งค่าหน้าตาของเว็บสำหรับสมาร์ทโฟน/แท็บเล็ต
 st.set_page_config(page_title="ระบบสืบค้นจับคู่ผสม Young Sire รุ่น29", layout="centered")
 
-st.title("🐄 ระบบสืบค้นจับคู่ผสมพันธุ์ Young Sire รุ่น29")
+st.title("ระบบสืบค้นจับคู่ผสมพันธุ์ Young Sire รุ่น29")
 
 # รายชื่อพ่อพันธุ์ทั้งหมดในตาราง
 SIRE_LIST = ['TH519', 'TH518', 'TH517', 'TH514', 'TH513', 'TH512', 'TH510', 'TH520', 'TH521', 'TH523']
